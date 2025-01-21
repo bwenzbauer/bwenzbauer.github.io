@@ -1,0 +1,53 @@
+
+  body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; font-family: 'Outfit', sans-serif; height: 100%; margin: 0;
+  }
+  h2 {
+    text-align: center;
+  }
+  h3 {
+      display: flex; align-items: center; background: #9f2915;
+  }
+  h3 li {
+      list-style-type: none; padding: 1em; margin-left: 5px;
+  }
+  h4 {
+    text-align: center;
+  }
+  p {
+    padding: 1em;
+  }
+  .btn:hover {
+    background-color: #2e5a4b
+  }
+  * {
+    margin: 0; padding: 0; box-sizing: border-box;
+  }
+  #logo {
+    align-content: left; padding-left: 3%; padding-top: 120px; position:absolute;
+  }
+  #bannerText {
+    color: #9f2915;
+  }
+  #profile {
+    float: left; padding-left: 3%; padding-right: 3%;
+  }
+  #colorButtons {
+    padding: 1em;
+  }
+  nav {
+      margin-left: auto; 
+  }
+  nav a {
+      color: #ffffff;
+  }
+  #hero-img {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/hero-img.jpeg");
+      height:500px; background-position: center; background-repeat: no-repeat; background-size: cover; display: flex; flex-wrap: wrap; justify-content: center; align-content: center;
+  }
+  #hero-text {
+      text-align: center; color: white;
+  }
+  .btn {
+      background-color: #3a9971; padding: 1em; color: white; text-decoration: none;
+  }
