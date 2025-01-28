@@ -73,6 +73,7 @@
       <button onclick="DarkColor()">Dark Mode</button>
       <button onclick="LightColor()">Light Mode</button>
     </div>
+    <p id="conditions">Currently in: </p>
 
     <br><br>
 
@@ -90,6 +91,8 @@
           document.getElementById('text2').style = "color: #9f2915F";
           document.getElementById('text3').style = "color: #9f2915F";
           document.getElementById('text4').style = "color: #9f2915F";
+          document.getElementById('conditions').style = "color: #9f2915F";
+          document.getElementById('conditions').innerHTML = "Currently in: Original Mode";
        }
        function DarkColor() {
           document.getElementById('pageBody').style = "background-color: #2E2E2E";
@@ -100,6 +103,8 @@
           document.getElementById('text2').style = "color: #FFFFFF";
           document.getElementById('text3').style = "color: #FFFFFF";
           document.getElementById('text4').style = "color: #FFFFFF";
+          document.getElementById('conditions').style = "color: #FFFFFF";
+          document.getElementById('conditions').innerHTML = "Currently in: Dark Mode";
        }
        function LightColor() {
           document.getElementById('pageBody').style = "background-color: #D9D9D9";
@@ -110,6 +115,8 @@
           document.getElementById('text2').style = "color: #2E2E2E";
           document.getElementById('text3').style = "color: #2E2E2E";
           document.getElementById('text4').style = "color: #2E2E2E";
+          document.getElementById('conditions').style = "color: #2E2E2E";
+          document.getElementById('conditions').innerHTML = "Currently in: Light Mode";
        }
    </script>
 
