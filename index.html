@@ -30,6 +30,7 @@
       <div id="hero-text">
         <h1>Brady Wenzbauer</h1>
           <p></p>
+          <br>
           <div class="cta">
           <a href="" class="btn">JavaScript Projects</a>
           </div>
@@ -47,7 +48,7 @@
 
     <br>
 
-    <h2 id="text2">
+    <h2 class="textColor" id="text2">
       About Me
     </h2>
 
@@ -57,7 +58,7 @@
       <img src="images/color edit-35.jpg" height="200px">
     </div>
 
-    <p id="text3">I've grown up in Syracuse, Utah and graduated High School in 2021, following after I went to Davis Technical College to focus on Diesel Mechanics,
+    <p class="textColor" id="text3">I've grown up in Syracuse, Utah and graduated High School in 2021, following after I went to Davis Technical College to focus on Diesel Mechanics,
       after completeing the program I went out and got my 'dream job' working on trains for Utah Transit Authority. After doing that for a little bit I
       relaized that this career path was not for me and decided quickly I needed to make a change. I moved onto a full time gig at a local mechanic shop 
       for several months while working my part-time custodial job in addition to that to maximize my efforts while not in school. During that time I 
@@ -68,56 +69,101 @@
     </p>
 
     <br><br><br><br>
+    <h2 class="textColor" id="text4">Color Modes</h2>
     <div id="colorButtons">
       <button onclick="originalColor()">Original</button>
       <button onclick="DarkColor()">Dark Mode</button>
       <button onclick="LightColor()">Light Mode</button>
+      <p id="conditions">Currently in: </p>
     </div>
-    <p id="conditions">Currently in: </p>
 
-    <br><br>
+    <br>
+ 
+    <div class="textColor" id="mathFunctions">
+		<h2>Area of a 2D Rectangle</h2>
+		<p id="math">Result: <span id='functionTwo'></span></p>
+		<p id="math"><label for='op1'>Operand 1:</label><input type='text' id='op1'></p>
+		<p id="math"><label for='op2'>Operand 2:</label><input type='text' id='op2'></p>	
+		<button onclick='multiplyTwo()' id="math">*</button>
 
-    <h4 id="text4">&copy; Copyright 2025 Brady W. Wenzbauer. All rights reserved.</h4>
+    <h2>Volume of a 3D Rectangle</h2>
+		<p id="math">Result: <span id='functionThree'></span></p>
+		<p id="math"><label for='op1'>Operand 1:</label><input type='text' id='op1'></p>
+		<p id="math"><label for='op2'>Operand 2:</label><input type='text' id='op2'></p>	
+    <p id="math"><label for='op3'>Operand 3:</label><input type='text' id='op3'></p>	
+		<button onclick='multiplyThree()' id="math">*</button>
+    </div>
+
+    <br>
+
+    <h4 class="textColor" id="text7">&copy; Copyright 2025 Brady W. Wenzbauer. All rights reserved.</h4>
 
     </body>
 
     <script>
        function originalColor() {
-          document.getElementById('pageBody').style = "background-color: #FFFFFF";
-          document.getElementById('redBannerHigh').style = "background-color: #9f2915";
-          document.getElementById('redBannerLow').style = "background-color: #9f2915";
-          document.getElementById('bannerText').style = "color: #9f2915F";
-          document.getElementById('text1').style = "color: #9f2915F";
-          document.getElementById('text2').style = "color: #9f2915F";
-          document.getElementById('text3').style = "color: #9f2915F";
-          document.getElementById('text4').style = "color: #9f2915F";
-          document.getElementById('conditions').style = "color: #9f2915F";
-          document.getElementById('conditions').innerHTML = "Currently in: Original Mode";
+          document.getElementById("pageBody").style = "background-color: #FFFFFF";
+          document.getElementById("redBannerHigh").style = "background-color: #9f2915";
+          document.getElementById("redBannerLow").style = "background-color: #9f2915";
+          document.getElementById("bannerText").style = "color: #9f2915F";
+          document.getElementById("text1").style = "color: #9f2915F";
+          document.getElementById("text2").style = "color: #9f2915F";
+          document.getElementById("text3").style = "color: #9f2915F";
+          document.getElementById("text4").style = "color: #9f2915F";
+          document.getElementById("text5").style = "color: #9f2915F";
+          document.getElementById("text6").style = "color: #9f2915F";
+          document.getElementById("text7").style = "color: #9f2915F";
+          document.getElementsByClassName("textColor").style = "color: #9f2915F";
+          document.getElementById("conditions").style = "color: #9f2915F";
+          document.getElementById("conditions").innerHTML = "Currently in: Original Mode";
        }
        function DarkColor() {
-          document.getElementById('pageBody').style = "background-color: #2E2E2E";
-          document.getElementById('redBannerHigh').style = "background-color: #5f190d";
-          document.getElementById('redBannerLow').style = "background-color: #5f190d";
-          document.getElementById('bannerText').style = "color: #5f190d";
-          document.getElementById('text1').style = "color: #FFFFFF";
-          document.getElementById('text2').style = "color: #FFFFFF";
-          document.getElementById('text3').style = "color: #FFFFFF";
-          document.getElementById('text4').style = "color: #FFFFFF";
-          document.getElementById('conditions').style = "color: #FFFFFF";
-          document.getElementById('conditions').innerHTML = "Currently in: Dark Mode";
+          document.getElementById("pageBody").style = "background-color: #2E2E2E";
+          document.getElementById("redBannerHigh").style = "background-color: #5f190d";
+          document.getElementById("redBannerLow").style = "background-color: #5f190d";
+          document.getElementById("bannerText").style = "color: #5f190d";
+          document.getElementById("text1").style = "color: #FFFFFF";
+          document.getElementById("text2").style = "color: #FFFFFF";
+          document.getElementById("text3").style = "color: #FFFFFF";
+          document.getElementById("text4").style = "color: #FFFFFF";
+          document.getElementById("text5").style = "color: #FFFFFF";
+          document.getElementById("text6").style = "color: #FFFFFF";
+          document.getElementById("text7").style = "color: #FFFFFF";
+          document.getElementsByClassName("textColor").style = "color: #FFFFFF";
+          document.getElementById("conditions").style = "color: #FFFFFF";
+          document.getElementById("conditions").innerHTML = "Currently in: Dark Mode";
        }
        function LightColor() {
-          document.getElementById('pageBody').style = "background-color: #D9D9D9";
-          document.getElementById('redBannerHigh').style = "background-color: #cf948a";
-          document.getElementById('redBannerLow').style = "background-color: #cf948a";
-          document.getElementById('bannerText').style = "color: #cf948a";
-          document.getElementById('text1').style = "color: #2E2E2E";
-          document.getElementById('text2').style = "color: #2E2E2E";
-          document.getElementById('text3').style = "color: #2E2E2E";
-          document.getElementById('text4').style = "color: #2E2E2E";
-          document.getElementById('conditions').style = "color: #2E2E2E";
-          document.getElementById('conditions').innerHTML = "Currently in: Light Mode";
-       }
+          document.getElementById("pageBody").style = "background-color: #D9D9D9";
+          document.getElementById("redBannerHigh").style = "background-color: #cf948a";
+          document.getElementById("redBannerLow").style = "background-color: #cf948a";
+          document.getElementById("bannerText").style = "color: #cf948a";
+          document.getElementById("text1").style = "color: #2E2E2E";
+          document.getElementById("text2").style = "color: #2E2E2E";
+          document.getElementById("text3").style = "color: #2E2E2E";
+          document.getElementById("text4").style = "color: #2E2E2E";
+          document.getElementById("text5").style = "color: #2E2E2E";
+          document.getElementById("text6").style = "color: #2E2E2E";
+          document.getElementById("text7").style = "color: #2E2E2E";
+          document.getElementsByClassName("textColor").style = "color: #2E2E2E";
+          document.getElementById("conditions").style = "color: #2E2E2E";
+          document.getElementById("conditions").innerHTML = "Currently in: Light Mode";
+      }
+      function multiplyTwo() {
+				let op1 = document.getElementById('op1').value;
+				let op2 = document.getElementById('op2').value;
+				// TODO: Multiplication operation
+				let result = Number(op1) * Number(op2);
+				document.getElementById('functionTwo').innerHTML = result;
+			}
+      function multiplyThree() {
+				let op1 = document.getElementById('op1').value;
+				let op2 = document.getElementById('op2').value;
+        let op3 = document.getElementById('op3').value;
+				// TODO: Multiplication operation
+				let result = Number(op1) * Number(op2) * Number(op3);
+				document.getElementById('functionThree').innerHTML = result;
+			}
    </script>
 
 </html>
