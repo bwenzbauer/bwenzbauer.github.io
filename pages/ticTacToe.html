@@ -1,0 +1,92 @@
+<DOCTYPE html>
+    <html lang="en">
+      <head></head>
+      <title>Tic-Tac-Toe</title>
+      <script src="../script/scriptTicTacToe.js"></script>
+      <script src="../script/styles.css"></script>
+    </head>
+    <body id="pageBody">
+      <meta charset="UTF-8">
+      <title>Wenz Projects</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+      <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="../styles/styles.css">
+      
+      <h3 id="redBannerHigh">
+        <div id="logo">
+          <img src="../images/logo.png" height="200px">
+        </div>
+        <nav id="bannerText"> 
+          <ul>
+            <li><a href="index.html"></a>.</li>
+          </ul>
+        </nav>
+      </h3>
+  
+      <main>
+        <div id="hero-img">
+        <div id="hero-text">
+          <h1>Brady Wenzbauer</h1>
+            <p></p>
+            <br>
+            <div class="cta">
+            <a href="https://bwenzbauer.github.io/pages/javaScriptHome" class="btn">JavaScript Projects</a>
+            </div>
+        </div>
+        </div>
+      </main>
+  
+      <h3 id="redBannerLow">
+        <nav>
+          <ul>
+            <li><a href="https://www.youtube.com/channel/UCKczvKCpw6HAV34y1p-FwNg" target="_blank" id="text1">YouTube Channel</a></li>
+          </ul>
+        </nav>
+      </h3>
+   
+
+
+
+
+
+
+      <div class="textColor" id="ticTacToe">
+          <h2>Tic Tac Toe</h2>
+          <body>
+            <table>
+                <tr>
+                    <td><button id="a1" onclick="changeMark('a1')"></button></td>
+                    <td><button id="b1" onclick="changeMark('b1')"></button></td>
+                    <td><button id="c1" onclick="changeMark('c1')"></button></td>
+                </tr>
+                <tr>
+                    <td><button id="a2" onclick="changeMark('a2')"></button></td>
+                    <td><button id="b2" onclick="changeMark('b2')"></button></td>
+                    <td><button id="c2" onclick="changeMark('c2')"></button></td>
+                </tr>
+                <tr>
+                    <td><button id="a3" onclick="changeMark('a3')"></button></td>
+                    <td><button id="b3" onclick="changeMark('b3')"></button></td>
+                    <td><button id="c3" onclick="changeMark('c3')"></button></td>
+                </tr>
+            </table>
+            <button id="btn2" id="resetGame" onclick="resetGame()">Reset Game</button>
+            <button id="btn3" id="checkWin">Winner is: <span id='winner'></span></button>
+        </body>
+      </div>
+  
+
+
+
+
+
+
+
+      <br><br>
+  
+      <h4 class="textColor" id="text7">&copy; Copyright 2025 Brady W. Wenzbauer. All rights reserved.</h4>
+  
+      </body>
+  
+  </html>

@@ -1,0 +1,19 @@
+First time only:
+Set up SSH key:
+ssh-keygen -t ed25519 -C bwenzbauer@gmail.com
+
+View public key:
+cat ~/.ssh/id_ed25519.pub
+
+How to get to my website directory:
+cd directory_name
+cd bwenzbauer.github.io
+
+How to push changes to my repository:
+git add -A
+git commit -m “some message”
+git push origin main
+
+If working from more than one device,
+Before each session:
+git pull

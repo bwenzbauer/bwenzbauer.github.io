@@ -57,3 +57,41 @@
   .textColor {
     color: black;
   }
+  #ticTacToe {
+    background-color: #5261672f;
+  }
+  #a1, #a2, #a3, #b1, #b2, #b3, #c1, #c2, #c3 {
+    width: 50px;
+    height: 50px;
+    margin-left: 5px;
+    background-color: #3a9971;
+    color: white;
+    border: #3a9971;
+    border-radius: 5px;
+    font-size: 30px;
+  }
+  #a1:hover, #a2:hover, #a3:hover, #b1:hover, #b2:hover, #b3:hover, #c1:hover, #c2:hover, #c3:hover {
+    width: 50px;
+    height: 50px;
+    margin-left: 5px;
+    background-color: #2e5a4b;
+    color: white;
+    border: #3a9971;
+    border-radius: 5px;
+  }
+  #btn2, #btn3 {
+    width: 50px;
+    height: 70px;
+    margin: 19px;
+    background-color: white;
+    color: black;
+    border: white;
+  }
+  #btn2:hover, #btn3:hover {
+    width: 50px;
+    height: 70px;
+    margin: 19px;
+    background-color: rgba(255, 255, 255, 0.699);
+    color: black;
+    border: white;
+  }
