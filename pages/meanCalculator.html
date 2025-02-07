@@ -1,10 +1,8 @@
 <DOCTYPE html>
     <html lang="en">
       <head></head>
-        <meta charset="UTF-8">
-        <meta name="keywords" content="Utah, desert, animals, flowers">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Brady Wenzbauer's Portfolio</title>
+      <title>Tic-Tac-Toe</title>
+      <script src="../script/scriptMean.js"></script>
     </head>
     <body id="pageBody">
       <meta charset="UTF-8">
@@ -32,7 +30,7 @@
             <p></p>
             <br>
             <div class="cta">
-            <a href="https://bwenzbauer.github.io/" class="btn">Home</a>
+            <a href="https://bwenzbauer.github.io/pages/javaScriptHome" class="btn">JavaScript Projects</a>
             </div>
         </div>
         </div>
@@ -45,28 +43,15 @@
           </ul>
         </nav>
       </h3>
-  
-      <br><br>
-  
-      <h2>
-        <a href="https://bwenzbauer.github.io/pages/Calculators" class="btn">Calculator</a>
-      </h2>
 
-      <br><br><br>
-  
-      <h2>
-        <a href="https://bwenzbauer.github.io/pages/ticTacToe" class="btn">Tic Tac Toe</a>
-      </h2>
-  
-      <br><br><br>
-  
-      <h2>
-        <a href="https://bwenzbauer.github.io/pages/meanCalculator" class="btn">Arithmetic Mean Calculator</a>
-      </h2>
 
-      <br><br><br>
-
-      <h4 class="textColor" id="text7">&copy; Copyright 2025 Brady W. Wenzbauer. All rights reserved.</h4>
-  
-      </body>
-  </html>
+		<h2>Data Entry</h2>
+		<p class="valueInput">Enter a value:<input type='text' id="input"></p>
+		<button class="btn2" onclick='add()' id="add">Add Value</button>
+		<button class="btn2" onclick='remove()' id="remove">Remove Value</button>
+		<h2>Current Dataset</h2>
+		<h4 id="dataset"></h4>
+		<h2>Current Mean</h2>
+		<h4 id="mean"></h4>
+	</body>
+</html>
