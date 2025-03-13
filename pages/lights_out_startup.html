@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lights Out</title>
+    <style>	
+		td {
+			border: 1px solid black;
+			width: 50px;
+			height: 50px;
+		}
+
+		.lighted {
+			background-color: violet;
+		}
+    </style>
+</head>
+<body>
+	<h1>Lights Out (1995)</h1>
+	<div id='game'></div>
+
+    <script>		
+		function startup() {
+			// TODO: Creating elements with JS
+			const table = document.createElement('table');
+
+			for (let row = 0; row < 5; row++) {
+				const tr = document.createElement('tr');
+				for (let col = 0; col < 5; col++) {
+					const td = document.createElement('td');
+					td.setAttribute('onclick', 'changeLights(this)')
+					tr.appendChild(td);
+				}
+
+				table.appendChild(tr);
+			}
+			
+			document.getElementById('game').append(table);
+			
+			// Other ways
+			// createElement(), createTextNode()
+			// appendChild(), insertBefore(), insertAfter()
+			// removeChild(), replaceChild()
+
+			// TODO: Turn on shuffle
+			shuffle();
+		}
+
+		function changeLights(element) {		
+			lights = [];
+
+			lights.push(element);
+
+			// add td to the left
+			lights.push(element.previousElementSibling);
+
+			// add td to the right
+			lights.push(element.nextElementSibling);
+
+			// add td above
+			let currentRow = element.parentNode;
+			let position = Array.from(currentRow.children).indexOf(element);
+			let rowAbove = currentRow.previousElementSibling;
+			if (rowAbove !== null ) {
+
+				let cellAbove = rowAbove.children[position];
+				lights.push(cellAbove);
+			}			
+			let rowBelow = currentRow.nextElementSibling;
+			if (rowBelow !== null ) {
+
+				let cellBelow = rowBelow.children[position];
+				lights.push(cellBelow);
+			}
+			
+
+			
+
+			
+			// this below is an extended version of turning the lights on/off
+			// lights.forEach((item) => {
+			// 	if (item.classList.contains('lighted'))
+			//		item.classList.remove('lighted');
+			//	else
+			//		item.classList.add('lighted');
+			// });
+
+			// this is the simpler method to turn lights on/off
+			lights.forEach((item) => {
+				if (item !== null)
+					item.classList.toggle('lighted');
+			})
+
+			if (checkWin())
+				alert('Winner');
+		}
+		
+		function shuffle() {
+			for (let i = 0; i < 10; i++) {
+				let row = Math.floor(Math.random() * 5);
+				let col = Math.floor(Math.random() * 5);
+				
+				let board = document.getElementById('game').firstElementChild;
+				
+				let randCell = board.children[row].children[col];
+				changeLights(randCell);				
+			}
+		}
+		
+		function checkWin() {
+			const board = document.getElementById('game');
+			const cells = board.querySelectorAll('td');			
+			return Array.from(cells).every(cell => !cell.classList.contains('lighted'));
+		}
+		
+		startup();
+	</script>
+</body>
+</html>
