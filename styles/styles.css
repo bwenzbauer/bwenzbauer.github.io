@@ -148,3 +148,15 @@
     width: 55px;
     height: 55px;
   }
+  input:invalid {
+    border: 2px solid red;
+  }
+  input:valid {
+    border: 2px solid green;
+  }
+  .password-message {
+    font-size: 14px;
+  }
+  .password-message span {
+    font-weight: bold;
+  }

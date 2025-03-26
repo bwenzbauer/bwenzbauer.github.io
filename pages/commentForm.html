@@ -1,0 +1,79 @@
+<DOCTYPE html>
+    <html lang="en">
+      <head></head>
+      <title>Tic-Tac-Toe</title>
+      <script src="../script/scriptComments.js"></script>
+    </head>
+    <body id="pageBody">
+      <meta charset="UTF-8">
+      <title>Wenz Projects</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+      <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="../styles/styles.css">
+      
+      <h3 id="redBannerHigh">
+        <div id="logo">
+          <img src="../images/logo.png" height="200px">
+        </div>
+        <nav id="bannerText"> 
+          <ul>
+            <li><a href="index.html"></a>.</li>
+          </ul>
+        </nav>
+      </h3>
+  
+      <main>
+        <div id="hero-img">
+        <div id="hero-text">
+          <h1>Brady Wenzbauer</h1>
+            <p></p>
+            <br>
+            <div class="cta">
+            <a href="https://bwenzbauer.github.io/pages/javaScriptHome" class="btn">JavaScript Projects</a>
+            </div>
+        </div>
+        </div>
+      </main>
+  
+      <h3 id="redBannerLow">
+        <nav>
+          <ul>
+            <li><a href="https://www.youtube.com/channel/UCKczvKCpw6HAV34y1p-FwNg" target="_blank" id="text1">YouTube Channel</a></li>
+          </ul>
+        </nav>
+      </h3>
+
+
+		<h2>Comment Submission Form</h2>
+	
+    <form id="signupForm" action="process.php" method="post">
+      <label for="email">Email:</label>
+      <input id="email" name="useremail" type="email" placeholder="myname@email.com" autocomplete="email" required>
+
+        <br>
+
+      <label for="year">Year of Birth:</label>
+      <input id="year" name="dob" placeholder="####" pattern="[0-9]{4}" title="Please enter 4 numbers." required>
+
+        <br>
+
+      <label for="username">Username:</label>
+      <input id="username" name="user" type="text" autocomplete="username" pattern="[a-zA-Z0-9_]{4,14}" title="4-14 characters, letters, numbers, and underscores" required>
+      
+        <br>
+
+      <label for="password">Password:</label>
+      <input id="password" name="userpass" type="password" required> 
+
+        <br>
+
+      <p id="passwordMessage" class="password-message"></p>
+
+        <br>
+        
+      <button type="submit">Sign Up</button>
+    </form>
+
+	</body>
+</html>
