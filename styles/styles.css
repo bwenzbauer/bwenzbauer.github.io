@@ -148,6 +148,203 @@
     width: 55px;
     height: 55px;
   }
+  body.dark-mode {
+    background-color: #333;
+    color: #f4f4f4;
+  }
+  input, button {
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  button {
+    background-color: #3a9971;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: #2e5a4b;
+  }
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  li button {
+    background-color: #9f2915;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  li button:hover {
+    background-color: #9f2a1584;
+  }
+  #themeToggle {
+    background-color: #9f2915;
+  }
+  #themeToggle:hover {
+    background-color: #9f2a1584;
+  }
+  
+  body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; font-family: 'Outfit', sans-serif; height: 100%; margin: 0;
+  }
+  h2 {
+    text-align: center;
+  }
+  h3 {
+    display: flex; align-items: center; background: #9f2915;
+  }
+  h3 li {
+    list-style-type: none; padding: 1em; margin-left: 5px;
+  }
+  h4 {
+    text-align: center;
+  }
+  h5 {
+    margin-left: 5px; padding: 1em;
+  }
+  #text3 {
+    padding: 1em;
+  }
+  #colorButtons {
+    padding: 15px; 
+    margin-left: 5px;
+  }
+  #mathFunctions {
+    padding: 15px;
+    margin-left: 5px;
+  }
+  .btn {
+    background-color: #3a9971;
+    padding: 1em; color: white;
+    text-decoration: none;
+  }
+  .btn:hover {
+    background-color: #2e5a4b;
+  }
+  .btn2 {
+    background-color: #3a9971;
+    padding: 1em; 
+    color: white;
+    text-decoration: none;
+    border: #3a9971; 
+    border-radius: 5px;
+    display: block;
+    margin: auto;
+    margin-top: 5px;
+  }
+  .btn2:hover {
+    background-color: #2e5a4b;
+  }
+  .valueInput {
+    padding: 1em; 
+    display: block;
+    margin: auto;
+    text-align: center;
+  }
+  * {
+    margin: 0; padding: 0; box-sizing: border-box;
+  }
+  #logo {
+    align-content: left; padding-left: 3%; padding-top: 120px; position:absolute;
+  }
+  #profile {
+    float: left; padding-left: 3%; padding-right: 3%;
+  }
+  nav {
+      margin-left: auto; 
+  }
+  nav a {
+      color: #ffffff;
+  }
+  #hero-img {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/hero-img.jpeg");
+      height:500px; background-position: center; background-repeat: no-repeat; background-size: cover; display: flex; flex-wrap: wrap; justify-content: center; align-content: center;
+  }
+  #hero-text {
+      text-align: center; color: white;
+  }
+  .textColor {
+    color: black;
+  }
+  #ticTacToe {
+    background-color: #5261672f;
+  }
+  #a1, #a2, #a3, #b1, #b2, #b3, #c1, #c2, #c3 {
+    width: 50px;
+    height: 50px;
+    margin-left: 5px;
+    background-color: #3a9971;
+    color: white;
+    border: #3a9971;
+    border-radius: 5px;
+    font-size: 30px;
+  }
+  #a1:hover, #a2:hover, #a3:hover, #b1:hover, #b2:hover, #b3:hover, #c1:hover, #c2:hover, #c3:hover {
+    width: 50px;
+    height: 50px;
+    margin-left: 5px;
+    background-color: #2e5a4b;
+    color: white;
+    border: #3a9971;
+    border-radius: 5px;
+  }
+  #btn2, #btn3 {
+    width: 50px;
+    height: 70px;
+    margin: 19px;
+    background-color: white;
+    color: black;
+    border: white;
+  }
+  #btn2:hover, #btn3:hover {
+    width: 50px;
+    height: 70px;
+    margin: 19px;
+    background-color: rgba(255, 255, 255, 0.699);
+    color: black;
+    border: white;
+  }
+  .tile {
+    font-size: xx-large;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    margin-left: 5px;
+    background-color: #3a9971;
+    border: #3a9971;
+    color: white;
+
+    border-radius: 5px;
+  }
+  .tile:hover {
+    font-size: xx-large;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    margin-left: 5px;
+    background-color: #2e5a4b;
+    border: #2e5a4b;
+    color: white;
+    border-radius: 5px;
+  }
+  td {
+    width: 55px;
+    height: 55px;
+  }
   input:invalid {
     border: 2px solid red;
   }
