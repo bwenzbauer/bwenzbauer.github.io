@@ -1,0 +1,223 @@
+<DOCTYPE html>
+  <html lang="en">
+    <head></head>
+      <meta charset="UTF-8">
+      <meta name="keywords" content="Utah, desert, animals, flowers">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Brady Wenzbauer's Portfolio</title>
+  </head>
+  <body id="pageBody">
+    <meta charset="UTF-8">
+    <title>Wenz Projects</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/styles.css">
+    
+    <h3 id="redBannerHigh">
+      <div id="logo">
+        <img src="../images/logo.png" height="200px">
+      </div>
+      <nav id="bannerText"> 
+        <ul>
+          <li><a href="index.html"></a>.</li>
+        </ul>
+      </nav>
+    </h3>
+
+    <main>
+      <div id="hero-img">
+      <div id="hero-text">
+        <h1>Brady Wenzbauer</h1>
+          <p></p>
+          <br>
+          <div class="cta">
+          <a href="https://bwenzbauer.github.io/pages/javaScriptHome" class="btn">JavaScript Projects</a>
+          </div>
+      </div>
+      </div>
+    </main>
+
+    <h3 id="redBannerLow">
+      <nav>
+        <ul>
+          <li><a href="https://www.youtube.com/channel/UCKczvKCpw6HAV34y1p-FwNg" target="_blank" id="text1">YouTube Channel</a></li>
+        </ul>
+      </nav>
+    </h3>
+    <br><br>
+    <h2>LEGO System 1991 9V Electric Train Sets</h2>
+    <br><br>
+    <h4>
+        <div id="media-container"></div>
+    </h4>
+    <br><br>
+    <h4 class="textColor" id="text7">Product Images &copy; 1991 LEGO Group</h4>
+    <h4 class="textColor" id="text7">&copy; Copyright 2025 Brady W. Wenzbauer. All rights reserved.</h4>
+
+    <script>
+        class MediaItem {
+            static idGen = 0;
+            #mediaId;
+            #legoSetInfo;
+
+            constructor(name, number, pieces, retailPrice, currentValue, image) {
+                this.name = name;
+                this.number = number;
+                this.pieces = pieces;
+                this.retailPrice = retailPrice;
+                this.currentValue = currentValue;
+                this.image = image;
+
+                // Generating unique id for each media item
+                this.#mediaId = MediaItem.idGen++;
+
+                // Helper method to create HTML element for media item
+                this.#makeMediaElement();
+            }
+
+            #makeMediaElement() {
+                this.#legoSetInfo = document.createElement('div');
+                this.#legoSetInfo.classList.add('media-item');
+                this.#legoSetInfo.setAttribute('id', this.#mediaId);
+
+                const imgElement = document.createElement('img');
+                imgElement.src = this.image; // image source
+                imgElement.alt = this.name;
+
+                const nameElement = document.createElement('h2');
+                nameElement.textContent = this.name;
+
+                const numberElement = document.createElement('p');
+                numberElement.textContent = `Set Number: ${this.number}`;
+
+                const piecesElement = document.createElement('p');
+                piecesElement.textContent = `Pieces: ${this.pieces}`;
+
+                const retailPriceElement = document.createElement('p');
+                retailPriceElement.textContent = `Retail Price: $${this.retailPrice}`;
+
+                const currentValueElement = document.createElement('p');
+                currentValueElement.textContent = `Current Value: $${this.currentValue}`;
+
+                this.#legoSetInfo.appendChild(imgElement);
+                this.#legoSetInfo.appendChild(nameElement);
+                this.#legoSetInfo.appendChild(numberElement);
+                this.#legoSetInfo.appendChild(piecesElement);
+                this.#legoSetInfo.appendChild(retailPriceElement);
+                this.#legoSetInfo.appendChild(currentValueElement);
+            }
+
+            get mediaElement() {
+                return this.#legoSetInfo;
+            }
+        }
+
+        const mediaData = [
+        {
+        name: "Straight Rails",
+        number: "4515",
+        pieces: 8,
+        retailPrice: 12.99,
+        currentValue: 31.76 + '-' + 47.46,
+        image: "../images/4515.jpg"
+        },
+        {
+        name: "Curved Rails",
+        number: "4520",
+        pieces: 8,
+        retailPrice: 12.99,
+        currentValue: 7.18 + '-' + 20.73,
+        image: "../images/4520.jpg"
+        },
+        {
+        name: "Manual Points with Track",
+        number: "4531",
+        pieces: 6,
+        retailPrice: 127.99,
+        currentValue: 28.42 + '-' + 46.57,
+        image: "../images/4531.jpg"
+        },
+        {
+        name: "Blue Hopper Car",
+        number: "4536",
+        pieces: 166,
+        retailPrice: 15.00,
+        currentValue: 72.71 + '-' + 180.56,
+        image: "../images/4536.jpg"
+        },
+        {
+        name: "Manual Level Crossing",
+        number: "4539",
+        pieces: 110,
+        retailPrice: 25.00,
+        currentValue: 46.36 + '-' + 167.88,
+        image: "../images/4539.jpg"
+        },
+        {
+        name: "Railroad Tractor Flatbed",
+        number: "4543",
+        pieces: 178,
+        retailPrice: 22.00,
+        currentValue: 73.80 + '-' + 298.59,
+        image: "../images/4543.jpg"
+        },
+        {
+        name: "Road & Rail Maintenance",
+        number: "4546",
+        pieces: 77,
+        retailPrice: 10.00,
+        currentValue: 18.61 + '-' + 109.95,
+        image: "../images/4546.jpg"
+        },
+        {
+        name: "Transformer and Speed Regulator",
+        number: "4548",
+        pieces: 3,
+        retailPrice: 41.99,
+        currentValue: 63.54 + '-' + 130.53,
+        image: "../images/4548.jpg"
+        },
+        {
+        name: "Crocodile Locomotive",
+        number: "4551",
+        pieces: 314,
+        retailPrice: 49.99,
+        currentValue: 229.47 + '-' + 743.52,
+        image: "../images/4551.jpg"
+        },
+        {
+        name: "Metro Station",
+        number: "4554",
+        pieces: 600,
+        retailPrice: 72.00,
+        currentValue: 200.48 + '-' + 510.00,
+        image: "../images/4554.jpg"
+        },
+        {
+        name: "Metroliner",
+        number: "4558",
+        pieces: 784,
+        retailPrice: 149.99,
+        currentValue: 355.24 + '-' + 1242.50,
+        image: "../images/4558.jpg"
+        },
+        {
+        name: "Load N' Haul Railroad",
+        number: "4563",
+        pieces: 476,
+        retailPrice: 120.00,
+        currentValue: 201.14 + '-' + 820.35,
+        image: "../images/4563.jpg"
+        }
+      ];
+
+        const mediaContainer = document.getElementById('media-container');
+
+        mediaData.forEach(item => {
+            const mediaItem = new MediaItem(item.name, item.number, item.pieces, item.retailPrice, item.currentValue, item.image);
+            mediaContainer.appendChild(mediaItem.mediaElement);
+        });
+      </script>
+    </body>
+</html>
