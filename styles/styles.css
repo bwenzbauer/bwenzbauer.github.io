@@ -1,4 +1,14 @@
 
+.media-item img {
+  max-width: 600px;
+  max-height: 500px;
+  width: 100%;
+  object-fit: cover;
+  border: 10px solid #3a5e99;
+}
+.media-item {
+  margin-bottom: 30px;
+}
   body {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; font-family: 'Outfit', sans-serif; height: 100%; margin: 0;
   }
@@ -356,14 +366,4 @@
   }
   .password-message span {
     font-weight: bold;
-  }
-  .media-item img {
-    max-width: 600px;
-    max-height: 500px;
-    width: 100%;
-    object-fit: cover;
-    border: 10px solid #3a5e99;
-  }
-  .media-item {
-    margin-bottom: 30px;
   }
